@@ -10,7 +10,7 @@ install_github("rezadrikvandi/HDGR")
 
 and then load it using library(HDGR)
 
-The main function, `HDGR()`, estimates all regression coefficients using a ridge penalty for the group of interest and a lasso penalty for the pooled nuisance predictors (main method, Case 3 in the paper). It returns the corresponding debiased estimates, confidence intervals and two-sided tests for the group of interest.
+Details about this package can be found in the DESCRIPTION file. The main function, `HDGR()`, estimates all regression coefficients using a ridge penalty for the group of interest and a lasso penalty for the pooled nuisance predictors (main method, Case 3 in the paper). It returns the corresponding debiased estimates, confidence intervals and two-sided tests for the group of interest.
 
 ## Example 1. Simulated data with known groups
 
