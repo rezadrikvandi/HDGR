@@ -38,6 +38,7 @@ groups[Index_XG5] <- 5L
 
 fit.groups <- HDGR(X, Y, groups = groups, target = 1, sigma = 1,
                    lambda1 = fit$lambda1, lambda2 = fit$lambda2)
+fit.groups
 ```
 
 ## Example 2. Riboflavin data with unknown groups
@@ -54,4 +55,4 @@ fit.gcl$betaG1_hat    # Penalised estimates for these genes
 fit.gcl$inference.G1  # Debiased estimates, standard errors, intervals and tests
 ```
 
-Here `sigma` is estimated from the data. The default intervals and tests for GCL use the fitted group and are unadjusted for multiplicity. Set `adjustment = "bonferroni"` to adjust across the target coefficients. See `?HDGR` for all arguments and return values.
+Here `sigma` is estimated from the data as in the paper. The default intervals and tests for GCL use the fitted group and are unadjusted for multiplicity. Set `adjustment = "bonferroni"` to adjust across the target coefficients. See `?HDGR` for all arguments and return values.
