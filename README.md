@@ -41,7 +41,7 @@ fit.groups <- HDGR(X, Y, groups = groups, target = 1, sigma = 1,
 fit.groups
 ```
 
-## Example 2. Riboflavin data with unknown groups
+## Example 2. Real data with unknown groups
 
 The riboflavin dataset contains gene expression measurements for 4,088 genes in 71 observations. The response is the log riboflavin production rate. Omit both `G1` and `groups` to apply group correlation learning (GCL). Here GCL forms 200 groups and takes the 21 genes with the highest absolute marginal correlation scores as the group of interest.
 
