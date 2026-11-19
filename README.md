@@ -26,22 +26,7 @@ fit$CI
 fit$testpower
 ```
 
-The table shows the Bonferroni-adjusted 95% confidence intervals and test decisions from one run. A decision of 1 indicates rejection of the hypothesis that the coefficient is zero. The defaults select penalties by cross-validation, so the results can vary with the fold assignment. To reproduce your own run, call `set.seed()` with a chosen integer before fitting.
-
-| Predictor | Lower | Upper | Test decision |
-|:----------|------:|------:|--------------:|
-| X1  |  1.0974 | 1.8389 | 1 |
-| X2  |  0.3540 | 1.1372 | 1 |
-| X3  |  0.0122 | 0.7948 | 1 |
-| X4  |  0.4568 | 1.2393 | 1 |
-| X5  | -0.2350 | 0.6221 | 0 |
-| X6  |  0.2707 | 1.0134 | 1 |
-| X7  | -0.1424 | 0.6641 | 0 |
-| X8  |  0.2188 | 1.0316 | 1 |
-| X9  | -0.0914 | 0.6817 | 0 |
-| X10 |  0.4020 | 1.0827 | 1 |
-
-To supply all five known groups, pass one label per column of `X` and identify the target label. The following call uses the penalties selected above so that the two fits can be compared directly.
+Also, to supply all five known groups in this simulated data example, pass one label per column of `X` and identify the target label. The following call uses the penalties selected above so that the two fits can be compared directly.
 
 ```r
 groups <- integer(ncol(X))
