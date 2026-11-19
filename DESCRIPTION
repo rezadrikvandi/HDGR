@@ -1,0 +1,26 @@
+Package: HDGR
+Title: Group Regression With Tailored Penalties for High-Dimensional Data With or Without Predefined Groups
+Version: 0.1.0
+Authors@R: person("Reza", "Drikvandi", email = "reza.drikvandi@durham.ac.uk",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9958-0422"))
+Description: Implements the main method (Case 3) of Drikvandi (2026)
+    <doi:10.1111/sjos.70072> for high-dimensional group regression with
+    a ridge penalty for the group of interest and a lasso penalty for the
+    pooled nuisance predictors. Users can supply group labels and identify
+    the group of interest, or use group correlation learning to form groups
+    when labels are unavailable. Note that supplying only the group of interest places
+    all remaining predictors in one nuisance group as in the paper. Provides coefficient
+    estimates, debiased estimates for the group of interest, confidence
+    intervals, and two-sided hypothesis tests.
+License: GPL-3
+Encoding: UTF-8
+Depends:
+    R (>= 3.5.0)
+Imports:
+    glmnet,
+    stats
+Suggests:
+    hdi
+URL: https://github.com/rezadrikvandi/HDGR
+BugReports: https://github.com/rezadrikvandi/HDGR/issues
+Config/roxygen2/version: 8.1.0
