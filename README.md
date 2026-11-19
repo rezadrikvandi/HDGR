@@ -1,14 +1,10 @@
-# HDGR
-
-HDGR is an R package for high-dimensional group regression with tailored penalties. It implements the Case 3 method described in the following paper.
+This R package, HDGR, is for the following published paper: 
 
 Drikvandi, R. (2026). Group Regression With Tailored Penalties for High-Dimensional Data With or Without Predefined Groups. *Scandinavian Journal of Statistics*, **53**(3), 1081–1100. [https://doi.org/10.1111/sjos.70072](https://doi.org/10.1111/sjos.70072)
 
-The main function, `HDGR()`, estimates all regression coefficients using a ridge penalty for the group of interest and a lasso penalty for the pooled nuisance predictors. It returns debiased estimates, confidence intervals and two-sided tests for the group of interest.
+The main function, `HDGR()`, estimates all regression coefficients using a ridge penalty for the group of interest and a lasso penalty for the pooled nuisance predictors (main method, Case 3 in the paper). It returns the corresponding debiased estimates, confidence intervals and two-sided tests for the group of interest.
 
-## Installation
-
-Run the following commands in R. If you need to install `devtools` first, run `install.packages("devtools")`.
+You can install the package using the following two commands in R
 
 ```r
 devtools::install_github("rezadrikvandi/HDGR")
