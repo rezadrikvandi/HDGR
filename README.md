@@ -2,7 +2,7 @@ This R package, HDGR, is for the following published paper:
 
 Drikvandi, R. (2026). Group Regression With Tailored Penalties for High-Dimensional Data With or Without Predefined Groups. *Scandinavian Journal of Statistics*, 53(3), 1081–1100. [https://doi.org/10.1111/sjos.70072](https://doi.org/10.1111/sjos.70072)
 
-You can install the package using the following two commands in R
+You can install this R package using the following two commands in R:
 
 library(devtools)
 
